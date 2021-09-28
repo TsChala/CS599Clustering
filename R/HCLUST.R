@@ -12,7 +12,7 @@
 #'@importFrom data.table :=
 #'
 #' @examples
-#' HCLUST(iris[,1:2],3)
+#' HCLUST(iris[,1:4],3)
 HCLUST <- function (data.mat, K){
   row.indices <- 1:nrow(data.mat)
   pair.dt <- data.table::data.table(expand.grid(row.i = row.indices, row.j = row.indices))

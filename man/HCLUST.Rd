@@ -19,5 +19,5 @@ Agglomerative hierarchical clustering on a given data matrix with a given
 number of clusters. Uses single-linkage method.
 }
 \examples{
-HCLUST(iris[,1:2],3)
+HCLUST(iris[,1:4],3)
 }
