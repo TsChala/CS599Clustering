@@ -1,0 +1,11 @@
+Package: CS599Clustering
+Type: Package
+Title: K-means and Hierarchical Clustering
+Version: 2021.09.26
+Author: Hunor Csala
+Maintainer: Hunor Csala <hc595@nau.edu>
+Description: This package provides an implementation of K-means and hierarchical clustering
+License: GPL-3
+RoxygenNote: 7.1.2
+Imports: data.table
+Suggests: testthat
