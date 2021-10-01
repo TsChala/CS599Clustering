@@ -9,7 +9,7 @@
 #' @return Vector of cluster assignments, [number of samples]
 #' @export
 #'
-#'@importFrom data.table :=
+#' @importFrom data.table :=
 #'
 #' @examples
 #' HCLUST(iris[,1:4],3)
