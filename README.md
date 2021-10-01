@@ -3,7 +3,9 @@
 This is sample package written for the course CS599 Unsupervised Learning.
 This package includes two unsupervised clustering algorithms:
 - Hiearchical clustering algorithm using the single linkage method
+    - written in R
 - K-Means algorithm
+    - written in C++ and integrated to R using Rcpp
 ***
 ## Installation
 You can install the latest version of this package from [GitHub](https://github.com/TsChala/CS599Clustering). For installation the *remotes* package is needed.
