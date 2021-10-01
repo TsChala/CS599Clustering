@@ -44,5 +44,8 @@ IntegerVector kmeansclust_interface
   if(status == ERROR_N_CENTERS_MUST_BE_SMALLER_THAN_N_DATA){
     Rcpp::stop("Number of  clusters must be smaller than the number of data points");
   }
+  if(status == WARNING_ITERATION_NUMBER){
+    Rcpp::warning("Algorithm didn't converge in 30 iterations");
+  }
   return cluster_vec;
 }

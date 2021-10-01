@@ -27,7 +27,7 @@ int kmeansclust
   // Initialize cluster centers to random data points
   // Generate random indices
   int *rand_index = new int[N_centers];
-  std::srand(1);
+  //std::srand(1);
   for(int rand_i=0; rand_i < N_centers; rand_i++){
     rand_index[rand_i] = std::rand() % N_data;
   }
@@ -103,8 +103,12 @@ int kmeansclust
     }
     //Rcpp::Rcout<<cluster_difference << std::endl;
     
+  // Stop if the cluster assignments didn't change or we reached 30 iterations  
   }while(cluster_difference != 0 && iteration < 30);
-
+  
+  if(iteration ==30){
+    return WARNING_ITERATION_NUMBER;
+  }
   
   return 0;//SUCCESS
 }
